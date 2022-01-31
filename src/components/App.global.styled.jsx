@@ -1,31 +1,41 @@
-// import createGlobalStyle from 'styled-components';
+import createGlobalStyle from 'styled-components';
 
-// export const Container = createGlobalStyle.div`
+export const Container = createGlobalStyle.div`
+html {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  /* list-style: none; */
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+img {
+  display: block;
+}
 
-// html {
-//     box-sizing: border-box;
-//     width: 100vw;
-//     overflow-x: hidden;
-//   }
+body {
+  background-color: #ffffff;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   
-//   *,
-//   *::before,
-//   *::after {
-//     box-sizing: inherit;
-//   }
-  
-//   body {
-//     margin: 0;
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-//       Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-//     color: #212121;
-//     background-color: #fff;
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//   }
-  
-//   img {
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-//   }`
+}
+display: flex;
+flex-direction: column;
+align-items: center;
+`;
