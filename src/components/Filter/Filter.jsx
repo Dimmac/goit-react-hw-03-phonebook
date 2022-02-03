@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { LabelFilterStyle, InputFilterStyle } from './Filter.styled';
 
 const generateId = nanoid();
-const Filter = ({ value, onChange }) => {
+
+export const Filter = ({ value, onChange }) => {
   return (
     <LabelFilterStyle htmlFor={generateId}>
       Find contacts by name
@@ -18,7 +19,7 @@ const Filter = ({ value, onChange }) => {
     </LabelFilterStyle>
   );
 };
-export default Filter;
+// export default Filter;
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,

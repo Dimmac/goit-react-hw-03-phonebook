@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import { FormPhoneBook, LabelPhoneBook, InputPhoneBook, ButtonPhoneBook } from './Form.styled';
 import PropTypes from 'prop-types'
 
-export default class ContactForm extends Component {
+export class ContactForm extends Component {
   static propTypes = {
     onSubmit: PropTypes.func.isRequired,
   };
