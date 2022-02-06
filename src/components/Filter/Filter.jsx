@@ -19,7 +19,6 @@ export const Filter = ({ value, onChange }) => {
     </LabelFilterStyle>
   );
 };
-// export default Filter;
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
